@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justice Matters Most</title>
+
+    <!-- cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- custom tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        brown: '#B68C5A',
+
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- custom font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+        .font-pop {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-pop">
+    <header class="container mx-auto">
+        <!-- navbar -->
+        <div class="navbar bg-base-100 mt-8">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Cases</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl w-10/12 md:w-auto"><img src="images/logo2.png" alt=""></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Cases</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end ">
+                <a class="btn bg-brown text-white w-auto">Free Consultation</a>
+            </div>
+        </div>
+
+        <!-- banner -->
+        <div class="hero mt-8" style="background-image: url(images/banner.png);">
+            <div class="hero-overlay "></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="md:w-2/3 pt-24 pb-24">
+                    <h1 class="mb-6 text-5xl lg:text-7xl font-extrabold leading-tight">We Provide Effective Legal
+                        Solutions</h1>
+                    <p class="mb-6">There are many variations of passages of Lorem Ipsum available, but the majority
+                        have suffered alteration in some form, by injected humour.</p>
+                    <div class="flex flex-col md:flex-row gap-4 md:gap-8">
+                        <input type="text" placeholder="Search your services" class="input input-bordered w-full text-black" />
+                        <button class="btn bg-brown pl-8 pr-8 text-white">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main></main>
+    <footer></footer>
+</body>
+
+</html>
